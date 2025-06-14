@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Boot Thymeleaf Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .hero {
+            margin-bottom: 20px;
+        }
+        .hero.is-primary {
+            background-color: #3273dc;
+            color: white;
+        }
+        .hero.is-primary .title {
+            color: white;
+        }
+        .hero.is-primary .subtitle {
+            color: #f5f5f5;
+        }
+        .card {
+            margin-bottom: 20px;
+        }                                                       
+        </style>
+</head>
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Spring Boot Thymeleaf Example</h1>
+                <h2 class="subtitle">A simple example of using Thymeleaf with Spring Boot</h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-one-third" th:each="item : ${items}">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title" th:text="${item.name}"></p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content" th:text="${item.description}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Spring Boot Thymeleaf Example</strong> by <a href=""></a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/js/bulma.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>
+<script th:inline="javascript">
+    // Example of inline JavaScript if needed
+    console.log("Thymeleaf template loaded successfully."); 
+</script>
+<script th:inline="javascript">
+    // Example of inline JavaScript if needed
+    console.log("Thymeleaf template loaded successfully.");
+</script>
+<script th:inline="javascript">
+    // Example of inline JavaScript if needed
+    console.log("Thymeleaf template loaded successfully.");
+</script>
+<script th:inline="javascript">
+    // Example of inline JavaScript if needed
+    console.log("Thymeleaf template loaded successfully.");
+</script>
+<script th:inline="javascript">
+    // Example of inline JavaScript if needed
+    console.log("Thymeleaf template loaded successfully.");
